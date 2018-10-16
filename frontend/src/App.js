@@ -5,6 +5,7 @@ import { Route, NavLink, HashRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Stuff from "./pages/Stuff";
 import Contact from "./pages/Contact";
+import Offers from "./pages/Offers";
 
 class App extends Component {
 
@@ -103,8 +104,12 @@ class App extends Component {
                             </li>
                             <li>
                                 <NavLink to="/stuff">Stuff</NavLink>
-                            </li>                                <li>
+                            </li>                                
+                            <li>
                                 <NavLink to="/contact">Contact</NavLink>
+                            </li>
+                            <li> 
+                                <NavLink to="/offers">Offers</NavLink>
                             </li>
                         </ul>
                     </nav>
@@ -122,10 +127,8 @@ class App extends Component {
                         <Route exact path="/" component={Home}/>
                         <Route path="/stuff" component={Stuff}/>
                         <Route path="/contact" component={Contact}/>
+                        <Route path="/offers" component={Offers}/>
                     </section>
-                    <script>
-                        window.("input[maxlength]").maxlength();
-                    </script>
                 </div>
             </HashRouter>
         );
